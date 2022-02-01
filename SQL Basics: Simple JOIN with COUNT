@@ -1,0 +1,5 @@
+Select people.id, people.name, count(toys.name) as toy_count
+From people
+LEFT JOIN toys on people.id = toys.people_id
+Group by 
+1,2
